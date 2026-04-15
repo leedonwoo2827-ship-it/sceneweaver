@@ -1,0 +1,29 @@
+# 챕터별 작업공간 (생성물)
+workspace/
+
+# 레퍼런스 샘플 (저작권 콘텐츠)
+sample/
+
+# 렌더된 영상 파일
+*.mp4
+*.mov
+*.webm
+
+# CapCut 드래프트 자동 생성물 (프로젝트 외부에서 관리)
+*.capcut
+*.draft.zip
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Claude Code 로컬
+.claude/settings.local.json
+.claude/cache/

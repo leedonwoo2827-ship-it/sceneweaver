@@ -1,0 +1,20 @@
+{
+  "name": "sceneweaver",
+  "version": "0.1.0",
+  "description": "ScriptForge의 마스터 대본과 FlowGenie/TTS의 산출물을 한 챕터 단위로 모아, CapCut 데스크톱이 곧바로 열 수 있는 드래프트 폴더(draft_info.json)를 생성하는 스킬 세트. 자산 수집 → SRT 자막 생성 → 사람 검수(줄바꿈·타이밍 미세조정) → CapCut 드래프트 빌드의 4단계 파이프라인을 제공한다. 파이프라인의 마지막 단계로서, 영상 조립 직전에 사람이 자막을 손볼 수 있는 명확한 개입 포인트를 둔다.",
+  "author": {
+    "name": "leedonwoo"
+  },
+  "repository": "https://github.com/leedonwoo2827-ship-it/sceneweaver",
+  "license": "MIT",
+  "keywords": [
+    "sceneweaver",
+    "capcut",
+    "video-assembly",
+    "draft-generator",
+    "subtitle",
+    "srt",
+    "scriptforge",
+    "flowgenie"
+  ]
+}
