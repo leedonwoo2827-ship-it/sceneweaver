@@ -15,6 +15,33 @@ StoryLens-27 → ScriptForge → FlowGenie + TTS → [SceneWeaver]
   - TTS: `ch{NN}_{SS}_narration.mp3` (씬별 내레이션)
 - **하류**: CapCut 데스크톱 (사람이 드래프트를 열어 최종 편집·렌더링)
 
+## 설치 및 실행
+
+SceneWeaver는 **Claude Code 플러그인**입니다. 두 가지 사용 방식이 있습니다.
+
+### 방식 A — 플러그인으로 설치해서 쓰기 (일반 사용자)
+
+Claude Code 세션에서 다음 두 명령을 실행합니다:
+
+```
+/plugin marketplace add leedonwoo2827-ship-it/sceneweaver
+/plugin install sceneweaver@sceneweaver
+```
+
+설치 후 `/weave`, `/weave-ingest`, `/weave-subtitle`, `/weave-draft` 슬래시 커맨드가 활성화됩니다. 업데이트는 `/plugin update sceneweaver` 로 받을 수 있습니다.
+
+> **중요**: 폴더를 워크스페이스로 여는 것만으로는 슬래시 커맨드가 자동 등록되지 **않습니다**. 루트의 `commands/` 와 `skills/` 는 플러그인 설치 경로로만 활성화됩니다. (프로젝트 로컬 커맨드는 `.claude/commands/` 에 두는 별개 메커니즘)
+
+### 방식 B — 코웍(개발) 모드: 설치 + 폴더 동시 열기
+
+스킬 로직을 구현·수정하면서 테스트할 때는 **둘 다 하는 게 편합니다**:
+
+1. **플러그인 설치** (방식 A와 동일) — 슬래시 커맨드가 활성화됨
+2. **동시에 VS Code로 프로젝트 폴더 열기** — `D:\00work\260417-sceneweaver\` 를 워크스페이스로 열어 파일을 수정
+3. **수정 후**: GitHub에 push → 사용 측에서 `/plugin update sceneweaver` → 재테스트
+
+동일 Claude Code 세션에서 양쪽 작업이 가능합니다. `CLAUDE.md` 는 워크스페이스 열었을 때 자동 로드되고, 슬래시 커맨드는 설치된 플러그인 쪽에서 동작합니다.
+
 ## 사전 준비
 
 1. **CapCut 데스크톱** 설치 (Windows/Mac). 본 프로젝트는 CapCut 4.x 대의 드래프트 포맷을 가정한다.
